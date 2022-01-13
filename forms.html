@@ -72,9 +72,31 @@
 
                 <p>
                     <label for="range">
-                        range:
-                        <input type="range" id="range" name="range">
+                        Nível de Satisfação:
+                        <input 
+                            type="range" 
+                            id="range" 
+                            name="range"
+                            min="0" 
+                            max="10"
+                            step="1">
                     </label>
+                </p>
+
+                <p>
+                    <label for="browser">Navegador:</label>
+                    <input 
+                        list="browsers" 
+                        name="browser" 
+                        id="browser"
+                    >
+                    <datalist id="browsers">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
                 </p>
 
                 <p>
