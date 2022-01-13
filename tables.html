@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        table td, table th { 
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        table caption {
+            caption-side: bottom;
+            text-align: left;
+            font-style: italic;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        table tfoot {
+            background: #ddd;
+        }
+
+        tfoot td {
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Nullam ac suscipit nibh, vel ornare eros.</p>
+    <table>
+        <caption><strong>Tabela 1</strong>: Uma descrição para tabela.</caption>
+        <thead>
+            <tr>
+                <th>Título 1</th>
+                <th>Título 2</th>
+                <th>Título 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">
+                    ocupa 2 colunas e 2 linhas
+                </td>
+                <td>Corpo 3</td>
+            </tr>
+            <tr>
+                <td>Corpo 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
