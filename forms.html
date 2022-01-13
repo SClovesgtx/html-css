@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        label {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <form action="#", method="get" target="_blank" autocomplete="off">
@@ -107,10 +113,18 @@
                             id="select"
                         >
                             <option value="calabresa">calabresa</option>
-                            <option value="4chesse">quatro queijos</option>
+                            <option disabled value="4chesse">quatro queijos</option>
                             <option value="chicken">frango</option>
                         </select>
                     </label>
+                </p>
+
+                <p>
+                    <label for="comment">Comentário:</label>
+                    <textarea 
+                        name="comment" 
+                        id="comment" cols="30" 
+                        rows="10"></textarea>
                 </p>
 
                 <p>
