@@ -37,42 +37,49 @@
             font-style: italic;
         }
 
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
     </style>
 </head>
 <body>
     <p>Nullam ac suscipit nibh, vel ornare eros.</p>
-    <table>
-        <caption><strong>Tabela 1</strong>: Uma descrição para tabela.</caption>
-        <thead>
-            <tr>
-                <th>Título 1</th>
-                <th>Título 2</th>
-                <th>Título 3</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Corpo 1</td>
-                <td>Corpo 2</td>
-                <td>Corpo 3</td>
-            </tr>
-            <tr>
-                <td colspan="2" rowspan="2">
-                    ocupa 2 colunas e 2 linhas
-                </td>
-                <td>Corpo 3</td>
-            </tr>
-            <tr>
-                <td>Corpo 3</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>Corpo 1</td>
-                <td>Corpo 2</td>
-                <td>Corpo 3</td>
-            </tr>
-        </tfoot>
-    </table>
+    <div class="responsive-table">
+        <table>
+            <caption><strong>Tabela 1</strong>: Uma descrição para tabela.</caption>
+            <thead>
+                <tr>
+                    <th>Título 1</th>
+                    <th>Título 2</th>
+                    <th>Título 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2">
+                        ocupa 2 colunas e 2 linhas
+                    </td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>
